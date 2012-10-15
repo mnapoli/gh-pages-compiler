@@ -18,10 +18,10 @@ if [ ! -d output ]; then
 	mkdir output
 fi
 
+# find tmp -name *.md
+
 cat ../resources/template-header.htm > output/index.htm
-
 ./github-flavored-markdown.rb tmp/README.md >> output/index.htm
-
 cat ../resources/template-footer.htm >> output/index.htm
 
 rm -rf tmp
