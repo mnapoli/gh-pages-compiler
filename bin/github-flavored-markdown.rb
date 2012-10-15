@@ -1,25 +1,8 @@
 #!/usr/bin/env ruby
-# Processor for Github flavored markdown, inspired by:
-# https://github.com/alampros/Docter/blob/master/bin/github-flavored-markdown.rb
-#
-# Current version of this script can be found here:
+
+# Processor for Github flavored markdown, inspired from:
 # https://gist.github.com/1300939
-#
-# Adapted for Redcarpet version 2 by Ralph von der Heyden
-# http://github.com/ralph
-# http://twitter.com/ralph
-# http://www.rvdh.de
-#
-# You will need the following gems:
-# * redcarpet version 2
-# * albino
-#
-# You also need the pygments library for syntax highlighting:
-# sudo easy_install pygments
-# Make sure the pygmentize bin is in your $PATH, or link it like that:
-# sudo ln -s /usr/local/bin/pygmentize /usr/bin
-#
-# Make sure to chmod +x this script.
+# (by Ralph von der Heyden http://github.com/ralph, http://twitter.com/ralph, http://www.rvdh.de)
 #
 # Usage:
 # github-flavored-markdown.rb document.md
@@ -27,24 +10,14 @@
 require 'rubygems'
 require 'redcarpet'
 
-class SyntaxRenderer < Redcarpet::Render::HTML
-  def block_code(code, language)
-    "<pre><code>#{code}</code></pre>"
-  end
-end
-
 def markdown(text)
-  renderer = SyntaxRenderer.new(optionize [
-    :with_toc_data,
-    :hard_wrap,
-    :xhtml
-  ])
-  markdown = Redcarpet::Markdown.new(renderer, optionize([
+  markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, optionize([
     :fenced_code_blocks,
     :no_intra_emphasis,
     :tables,
     :autolink,
     :strikethrough,
+    :lax_spacing,
     :space_after_headers
   ]))
   markdown.render(text)
