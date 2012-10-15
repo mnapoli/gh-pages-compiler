@@ -10,3 +10,8 @@ cd bin/
 ```
 
 **Work in progress**
+
+Made using:
+
+* [Redcarpet](https://github.com/vmg/redcarpet)
+* [This gist](https://gist.github.com/1300939) from [ralph](https://gist.github.com/ralph)
