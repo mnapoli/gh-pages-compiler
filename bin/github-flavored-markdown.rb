@@ -51,7 +51,7 @@ def markdown(text)
 end
 
 def optionize(options)
-  options.each_with_object({}) { |option, memo| memo[option] = true }
+  options.inject({}) { |memo, option| memo[option] = true; memo }
 end
 
 puts markdown(ARGF.read)
