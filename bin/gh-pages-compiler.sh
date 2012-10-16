@@ -1,10 +1,13 @@
 #!/bin/sh
 #
 # Usage:
-# gh-pages-compiler.sh <source-repo> <target-repo>
+# gh-pages-compiler.sh <git-repository>
 
-if [ "$#" -ne 2 ]; then
-  echo "Usage: $0 <source-repo> <target-repo>" >&2
+set -e
+set -u
+
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 <git-repository>" >&2
   exit 1
 fi
 
@@ -21,10 +24,17 @@ fi
 if [ -d output ]; then
 	rm -rf output
 fi
-mkdir output
 
-# Checkout the repository
+# Checkout the source branch
 git clone --quiet $1 tmp
+
+# Checkout the target branch
+git clone --quiet -b gh-pages $1 output
+
+# Check if there is a template in the source branch
+if [ -d tmp/gh-pages-template ]; then
+	TEMPLATE_DIR=tmp/gh-pages-template
+fi
 
 # Find all markdown files
 cd tmp
@@ -51,3 +61,9 @@ done < files.tmp
 
 rm files.tmp
 rm -rf tmp
+
+# Commit and publish changes
+cd output
+git add -A
+git commit --quiet -am  "Pages generation"
+git push --quiet
