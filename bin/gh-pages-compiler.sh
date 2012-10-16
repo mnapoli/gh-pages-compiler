@@ -28,7 +28,7 @@ git clone --quiet $1 tmp
 
 # Find all markdown files
 cd tmp
-find . -name '*.md' > $BASE_DIR/files.tmp
+find . -name '*.md' | rev | cut -f 2- -d '.' | rev > $BASE_DIR/files.tmp
 
 cd $BASE_DIR
 
@@ -38,18 +38,16 @@ cp -r $TEMPLATE_DIR/public/* output/
 # Compile each file
 while read line
 do
+	SOURCE_FILE=tmp/$line.md
+	OUTPUT_FILE=output/$line.html
+	# Rename README to index
+	OUTPUT_FILE=$(echo $OUTPUT_FILE | sed -e 's/README/index/g')
     echo $line
     mkdir -p $(dirname output/$line)
-	cat $TEMPLATE_DIR/template-header.html > output/$line
-	bin/github-flavored-markdown.rb tmp/$line >> output/$line
-	cat $TEMPLATE_DIR/template-footer.html >> output/$line
+	cat $TEMPLATE_DIR/template-header.html > $OUTPUT_FILE
+	bin/github-flavored-markdown.rb $SOURCE_FILE >> $OUTPUT_FILE
+	cat $TEMPLATE_DIR/template-footer.html >> $OUTPUT_FILE
 done < files.tmp
-
-# Rename all files to .html
-find output -name "*.md" -exec rename '.md' '.html' {} \;
-
-# Rename 'README.html' to 'index.html'
-find output -name "README.html" -exec rename README.html index.html {} \;
 
 rm files.tmp
 rm -rf tmp
