@@ -1,74 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Gh-pages-compiler : Markdown compiler for github pages" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default template</title>
+    <meta name="description" content="">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <title>Gh-pages-compiler</title>
-  </head>
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
-  <body>
+</head>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mnapoli/gh-pages-compiler">View on GitHub</a>
+<body>
 
-          <h1 id="project_title">Gh-pages-compiler</h1>
-          <h2 id="project_tagline">Markdown compiler for github pages</h2>
+    <div class="container">
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/mnapoli/gh-pages-compiler/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/mnapoli/gh-pages-compiler/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+	<header class="jumbotron subhead" id="overview">
+		<h1>Default template</h1>
+		<p class="lead">This is what your documentation will look like.</p>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Your project</a>
+				<ul class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Getting started</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<section>
+<p><em>gh-pages-compiler</em> generate a website from your markdown documentation.</p>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+<h2>Introduction</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p><strong>This project is in progress</strong></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p><a href="http://pages.github.com/">Github pages</a> are good, but what do you do:</p>
+
+<ul>
+<li>if you want to write your documentation in Markdown and not in HTML?</li>
+<li>if you want to publish your documentation on a website <em>and</em> keep it in the repository?</li>
+<li>if you want the website to be automatically generated and updated at each commit?</li>
+</ul>
+
+<p><em>gh-pages-compiler</em> is here to help you. <strong>Your documentation is written in Markdown, versionned in your repository,
+automatically compiled to HTML and published to <em>Github pages</em>.</strong></p>
+
+<h2>How does it work</h2>
+
+<ol>
+<li><em>gh-pages-compiler</em> is hooked to your repository to know when you commit</li>
+<li>you write your README and documentation in <code>.md</code> files (Markdown) on your repository</li>
+<li>each time you commit, <em>gh-pages-compiler</em> fetches all <code>.md</code> files and compiles them to HTML</li>
+<li>HTML files are committed to the <code>gh-pages</code> branch of your repository, and thus are published as a website by Github</li>
+</ol>
+
+<p>The only question here is: <strong>where is <em>gh-pages-compiler</em> hosted?</strong></p>
+
+<ul>
+<li>you can install <em>gh-pages-compiler</em> on your own server</li>
+<li>a public hosting of <em>gh-pages-compiler</em> may be available in the future</li>
+</ul>
+
+<h2>Features</h2>
+
+<ul>
+<li>compiles Markdown using the same configuration as Github (to ensure correct results)</li>
+<li>allows to define a template to design your website as wanted</li>
+</ul>
+
+<h2>Installation and usage</h2>
+
+<p>Requirements:</p>
+
+<ul>
+<li>Unix system (works on Mac OS X)</li>
+<li>Ruby</li>
+<li><a href="https://github.com/vmg/redcarpet">Redcarpet</a> Ruby gem</li>
+</ul>
+
+<p>Usage:</p>
+
+<pre><code class="sh">bin/gh-pages-compiler.sh &lt;source-repo&gt; &lt;target-repo&gt;
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h2>Credits</h2>
 
-<h3>Designer Templates</h3>
+<p>Made using/inspired by:</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<ul>
+<li><a href="https://github.com/vmg/redcarpet">Redcarpet</a></li>
+<li><a href="https://gist.github.com/1300939">This gist</a> from <a href="https://gist.github.com/ralph">ralph</a></li>
+</ul>
 
-<h3>Rather Drive Stick?</h3>
+		</section>
+	
+    </div><!-- /container -->
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Gh-pages-compiler maintained by <a href="https://github.com/mnapoli">mnapoli</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script>
+		$(function() {
+			$("section h2").wrap('<div class="page-header" />');
+		});
+	</script>
 
   </body>
 </html>
