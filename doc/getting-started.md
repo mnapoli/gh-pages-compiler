@@ -5,7 +5,7 @@ This guide will help you set up *gh-pages-compiler* for your project.
 First, you need to decide where will *gh-pages-compiler* be hosted:
 
 * you can use a public *gh-pages-compiler* hosting (coming soon)
-* you can install [*gh-pages-compiler* on your own server](install)
+* you can install [*gh-pages-compiler* on your own server](doc/install)
 
 ## Set up your project
 
@@ -18,11 +18,14 @@ Here is an example of a README file.
 It has to be formatted using [Markdown language](http://daringfireball.net/projects/markdown/basics).
 
 ```markdown
-This is the home page for the *AAA project*.
+This is the home page for the **AAA project**.
 
-## Introduction
+## Features
 
-This is the introduction text for my project.
+AAA project offers the following features:
+
+* make coffee in 20 seconds
+* print `coffee OK` in the console
 ```
 
 Save your file as `README.md` (`.md` is for Markdown).

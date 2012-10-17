@@ -32,7 +32,7 @@ The only question here is: **where is *gh-pages-compiler* hosted?**
 
 ## Read more
 
-* [Getting started](doc/getting/started)
+* [Getting started](doc/getting-started)
 
 ## Credits
 

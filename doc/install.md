@@ -30,5 +30,13 @@ $ cd gh-pages-compiler
 Usage:
 
 ```sh
-bin/gh-pages-compiler.sh <repository-url>
+$ bin/gh-pages-compiler.sh <repository-url>
 ```
+
+Example:
+
+```sh
+$ bin/gh-pages-compiler.sh https://github.com/mnapoli/gh-pages-compiler.git
+```
+
+You will need to type your Github username and password when git will try to *push* the modifications.
