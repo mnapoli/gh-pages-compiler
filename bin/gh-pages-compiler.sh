@@ -68,4 +68,6 @@ git add -A
 git commit --quiet -am  "Pages generation"
 git push --quiet
 
+cd $BASE_DIR
+
 rm -rf output
