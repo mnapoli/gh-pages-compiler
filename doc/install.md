@@ -20,12 +20,14 @@ $ [sudo] gem install redcarpet
 
 ## Installation
 
-Now to install *gh-pages-compiler*:
+Now to install *gh-pages-compiler*, you can check out the git repository:
 
 ```sh
 $ git clone https://github.com/mnapoli/gh-pages-compiler.git
 $ cd gh-pages-compiler
 ```
+
+or [download](doc/download) the latest version.
 
 ## Test the installation: first build
 
