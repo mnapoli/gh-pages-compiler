@@ -5,7 +5,7 @@ This guide will help you set up *gh-pages-compiler* for your project.
 First, you need to decide where will *gh-pages-compiler* be hosted:
 
 * you can use a public *gh-pages-compiler* hosting (coming soon)
-* you can install [*gh-pages-compiler* on your own server](doc/install)
+* you can install [*gh-pages-compiler* on your own server](install)
 
 ## Set up your project
 

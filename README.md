@@ -30,19 +30,9 @@ The only question here is: **where is *gh-pages-compiler* hosted?**
 * compiles Markdown using the same configuration as Github (to ensure correct results)
 * allows to define a template to design your website as wanted
 
-## Installation and usage
+## Read more
 
-Requirements:
-
-* Unix system (works on Mac OS X)
-* Ruby
-* [Redcarpet](https://github.com/vmg/redcarpet) Ruby gem
-
-Usage:
-
-```sh
-bin/gh-pages-compiler.sh <repository>
-```
+* [Getting started](doc/getting/started)
 
 ## Credits
 

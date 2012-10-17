@@ -24,3 +24,11 @@ Now to install *gh-pages-compiler*:
 $ git clone https://github.com/mnapoli/gh-pages-compiler.git
 $ cd gh-pages-compiler
 ```
+
+## Test the installation: first build
+
+Usage:
+
+```sh
+bin/gh-pages-compiler.sh <repository-url>
+```
