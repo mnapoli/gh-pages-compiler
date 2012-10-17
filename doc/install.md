@@ -1,5 +1,7 @@
 This guide will help you install *gh-pages-compiler* on your server or computer.
 
+# Install on your own machine
+
 ## Requirements
 
 You will need a Unix system:

@@ -1,5 +1,7 @@
 Download *gh-pages-compiler*.
 
+# Download
+
 * Latest version: [Download as .zip](https://github.com/mnapoli/gh-pages-compiler/zipball/master),
 [Download as .tar.gz](https://github.com/mnapoli/gh-pages-compiler/tarball/master)
 

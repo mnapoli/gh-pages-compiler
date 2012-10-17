@@ -36,7 +36,7 @@ The only question here is: **where is *gh-pages-compiler* hosted?**
 
 ## Credits
 
-Made using/inspired by:
+Made by [Matthieu Napoli](https://github.com/mnapoli), using/inspired by:
 
 * [Redcarpet](https://github.com/vmg/redcarpet)
 * [This gist](https://gist.github.com/1300939) from [ralph](https://gist.github.com/ralph)

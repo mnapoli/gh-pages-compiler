@@ -1,5 +1,7 @@
 This guide will help you set up *gh-pages-compiler* for your project.
 
+# Getting started
+
 ## Choose a hosting
 
 First, you need to decide where will *gh-pages-compiler* be hosted:
@@ -15,7 +17,7 @@ There usually is a **README** file in every project.
 If there is none, you should write one at the root of your project repository.
 
 Here is an example of a README file.
-It has to be formatted using [Markdown language](http://daringfireball.net/projects/markdown/basics).
+It has to be formatted using the [Markdown language](http://daringfireball.net/projects/markdown/basics).
 
 ```markdown
 This is the home page for the **AAA project**.
@@ -30,7 +32,7 @@ AAA project offers the following features:
 
 Save your file as `README.md` (`.md` is for Markdown).
 
-The `README.md` file will be used to generate the [Home page of your website].
+The `README.md` file will be used to generate the **Home page of your website**.
 
 ### Links
 
