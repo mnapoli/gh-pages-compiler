@@ -67,3 +67,5 @@ cd output
 git add -A
 git commit --quiet -am  "Pages generation"
 git push --quiet
+
+rm -rf output
