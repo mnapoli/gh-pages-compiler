@@ -41,7 +41,7 @@ Requirements:
 Usage:
 
 ```sh
-bin/gh-pages-compiler.sh <source-repo> <target-repo>
+bin/gh-pages-compiler.sh <repository>
 ```
 
 ## Credits
