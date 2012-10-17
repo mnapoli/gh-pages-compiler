@@ -39,45 +39,39 @@
         </header>
 
         <section>
-<p>This guide will help you set up <em>gh-pages-compiler</em> for your project.</p>
+<p>This guide will help you install <em>gh-pages-compiler</em> on your server or computer.</p>
 
-<h2>Choose a hosting</h2>
+<h2>Requirements</h2>
 
-<p>First, you need to decide where will <em>gh-pages-compiler</em> be hosted:</p>
+<p>You will need a Unix system:</p>
 
 <ul>
-<li>you can use a public <em>gh-pages-compiler</em> hosting (coming soon)</li>
-<li>you can install <a href="install"><em>gh-pages-compiler</em> on your own server</a></li>
+<li>Linux</li>
+<li>Mac OS X</li>
+<li><a href="http://cygwin.com">Cygwin</a> for Windows</li>
 </ul>
 
-<h2>Set up your project</h2>
+<p>Install <a href="http://www.ruby-lang.org">Ruby</a>.</p>
 
-<h3>Home page: README</h3>
+<p>Install <a href="https://github.com/vmg/redcarpet">Redcarpet</a> (Ruby gem):</p>
 
-<p>There usually is a <strong>README</strong> file in every project.
-If there is none, you should write one at the root of your project repository.</p>
-
-<p>Here is an example of a README file.
-It has to be formatted using <a href="http://daringfireball.net/projects/markdown/basics">Markdown language</a>.</p>
-
-<pre><code class="markdown">This is the home page for the *AAA project*.
-
-## Introduction
-
-This is the introduction text for my project.
+<pre><code class="sh">$ [sudo] gem install redcarpet
 </code></pre>
 
-<p>Save your file as <code>README.md</code> (<code>.md</code> is for Markdown).</p>
+<h2>Installation</h2>
 
-<p>The <code>README.md</code> file will be used to generate the [Home page of your website].</p>
+<p>Now to install <em>gh-pages-compiler</em>:</p>
 
-<h3>Links</h3>
+<pre><code class="sh">$ git clone https://github.com/mnapoli/gh-pages-compiler.git
+$ cd gh-pages-compiler
+</code></pre>
 
-<p>This documentation will come soon.</p>
+<h2>Test the installation: first build</h2>
 
-<h3>Template</h3>
+<p>Usage:</p>
 
-<p>This documentation will come soon.</p>
+<pre><code class="sh">bin/gh-pages-compiler.sh &lt;repository-url&gt;
+</code></pre>
 
 		</section>
 
