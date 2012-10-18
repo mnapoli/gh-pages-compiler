@@ -78,7 +78,32 @@ AAA project offers the following features:
 
 <h3>Links</h3>
 
-<p>This documentation will come soon.</p>
+<p>Once you have written the home page in the README,
+you can start writing other pages in other <code>.md</code> files.</p>
+
+<p>For example, with the following files:</p>
+
+<pre><code>README.md
+doc/getting-started.md
+doc/faq.md
+</code></pre>
+
+<p>You can can create Markdown links as such:</p>
+
+<pre><code>[Home](index)
+[Getting started guide](doc/getting-started)
+[Frequently asked questions](doc/faq)
+</code></pre>
+
+<p>However, you will need to set up the <a href="http://www.w3schools.com/tags/tag_base.asp">HTML <code>base</code> tag</a>
+in your template so that links are relative to the root of your website.</p>
+
+<pre><code class="html">&lt;head&gt;
+
+    &lt;base href=&quot;http://username.github.com/yourproject/&quot;&gt;
+
+&lt;/head&gt;
+</code></pre>
 
 <h3>Template</h3>
 
