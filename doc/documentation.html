@@ -40,62 +40,42 @@
         </header>
 
         <section>
-<p><em>gh-pages-compiler</em> generate a website from your markdown documentation.</p>
+<h1>Documentation</h1>
 
-<h2>Introduction</h2>
+<p>Have your read the <a href="doc/getting-started">getting started</a> guide?</p>
 
-<p><strong>This project is in progress</strong></p>
+<h2>Links</h2>
 
-<p><a href="http://pages.github.com/">Github pages</a> are good, but what do you do:</p>
+<p>Once you have written the home page in the README,
+you can start writing other pages in other <code>.md</code> files.</p>
 
-<ul>
-<li>if you want to write your documentation in Markdown and not in HTML?</li>
-<li>if you want to publish your documentation on a website <em>and</em> keep it in the repository?</li>
-<li>if you want the website to be automatically generated and updated at each commit?</li>
-</ul>
+<p>For example, with the following files:</p>
 
-<p><em>gh-pages-compiler</em> is here to help you. <strong>Your documentation is written in Markdown, versionned in your repository,
-automatically compiled to HTML and published to <em>Github pages</em>.</strong></p>
+<pre><code>README.md
+doc/getting-started.md
+doc/faq.md
+</code></pre>
 
-<h2>How does it work</h2>
+<p>You can can create Markdown links as such and they will work on the website:</p>
 
-<ol>
-<li><em>gh-pages-compiler</em> is hooked to your repository to know when you commit</li>
-<li>you write your README and documentation in <code>.md</code> files (Markdown) on your repository</li>
-<li>each time you commit, <em>gh-pages-compiler</em> fetches all <code>.md</code> files and compiles them to HTML</li>
-<li>HTML files are committed to the <code>gh-pages</code> branch of your repository, and thus are published as a website by Github</li>
-</ol>
+<pre><code class="md">[Home](index)
+[Getting started guide](doc/getting-started)
+[Frequently asked questions](doc/faq)
+</code></pre>
 
-<p>The only question here is: <strong>where is <em>gh-pages-compiler</em> hosted?</strong></p>
+<p>You can of course use these urls for your menu too, they are real valid urls (see below for writing a template).</p>
 
-<ul>
-<li>you can install <em>gh-pages-compiler</em> on your own server</li>
-<li>a public hosting of <em>gh-pages-compiler</em> may be available in the future</li>
-</ul>
+<p>However, you will need to set up the <a href="http://www.w3schools.com/tags/tag_base.asp">HTML <code>base</code> tag</a>
+in your template so that links are relative to the root of your website.</p>
 
-<h2>Features</h2>
+<pre><code class="html">&lt;head&gt;
+    &lt;base href=&quot;http://username.github.com/yourproject/&quot;&gt;
+&lt;/head&gt;
+</code></pre>
 
-<ul>
-<li>compiles Markdown using the same configuration as Github (to ensure correct results)</li>
-<li>allows to define a template to design your website as wanted</li>
-</ul>
+<h2>Template</h2>
 
-<h2>Read more</h2>
-
-<ul>
-<li><a href="doc/getting-started">Getting started</a></li>
-</ul>
-
-<h2>Credits</h2>
-
-<p>Made by <a href="https://github.com/mnapoli">Matthieu Napoli</a>, using/inspired by:</p>
-
-<ul>
-<li><a href="https://github.com/vmg/redcarpet">Redcarpet</a></li>
-<li><a href="https://gist.github.com/1300939">This gist</a> from <a href="https://gist.github.com/ralph">ralph</a></li>
-</ul>
-
-<p>Follow the project <a href="https://github.com/mnapoli/gh-pages-compiler/">on Github</a></p>
+<p>This documentation will come soon.</p>
 
 		</section>
 

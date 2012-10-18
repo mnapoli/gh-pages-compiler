@@ -34,6 +34,7 @@
                     <li><a href="index">Home</a></li>
                     <li><a href="doc/download">Download</a></li>
                     <li><a href="doc/getting-started">Getting started</a></li>
+                    <li><a href="doc/documentation">Documentation</a></li>
                 </ul>
             </div>
         </header>
@@ -54,60 +55,32 @@
 
 <h2>Set up your project</h2>
 
-<h3>Home page: README</h3>
+<p>Once <em>gh-pages-compiler</em> is configured with your project:</p>
 
-<p>There usually is a <strong>README</strong> file in every project.
-If there is none, you should write one at the root of your project repository.</p>
+<ul>
+<li><strong>Create a <code>gh-pages</code> branch</strong> on your repository (if it doesn&#39;t exist)</li>
+</ul>
 
-<p>Here is an example of a README file.
-It has to be formatted using the <a href="http://daringfireball.net/projects/markdown/basics">Markdown language</a>.</p>
+<p>Github will automatically generate a website from the content of this branch.</p>
 
-<pre><code class="markdown">This is the home page for the **AAA project**.
+<ul>
+<li><strong>Write a <code>README.md</code></strong> at the root of your repository, in the master branch</li>
+</ul>
 
-## Features
+<p>Read <a href="doc/why-readme">why and how</a> if you are lost.</p>
 
-AAA project offers the following features:
+<ul>
+<li><strong>Commit</strong>, and check out the Github pages!</li>
+</ul>
 
-* make coffee in 20 seconds
-* print `coffee OK` in the console
-</code></pre>
+<p>If everything is correctly configured, Github will call <em>gh-pages-compiler</em> when you commit.
+<em>gh-pages-compiler</em> will then build the website and commit it on the <code>gh-pages</code> branch.</p>
 
-<p>Save your file as <code>README.md</code> (<code>.md</code> is for Markdown).</p>
+<p>Github will then publish the website at something like <a href="http://username.github.com/projectname/">http://username.github.com/projectname/</a>.</p>
 
-<p>The <code>README.md</code> file will be used to generate the <strong>Home page of your website</strong>.</p>
+<h2>More</h2>
 
-<h3>Links</h3>
-
-<p>Once you have written the home page in the README,
-you can start writing other pages in other <code>.md</code> files.</p>
-
-<p>For example, with the following files:</p>
-
-<pre><code>README.md
-doc/getting-started.md
-doc/faq.md
-</code></pre>
-
-<p>You can can create Markdown links as such:</p>
-
-<pre><code>[Home](index)
-[Getting started guide](doc/getting-started)
-[Frequently asked questions](doc/faq)
-</code></pre>
-
-<p>However, you will need to set up the <a href="http://www.w3schools.com/tags/tag_base.asp">HTML <code>base</code> tag</a>
-in your template so that links are relative to the root of your website.</p>
-
-<pre><code class="html">&lt;head&gt;
-
-    &lt;base href=&quot;http://username.github.com/yourproject/&quot;&gt;
-
-&lt;/head&gt;
-</code></pre>
-
-<h3>Template</h3>
-
-<p>This documentation will come soon.</p>
+<p>Go on and <a href="doc/documentation">read the documentation</a> to use all the features.</p>
 
 		</section>
 
