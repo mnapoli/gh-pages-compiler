@@ -40,3 +40,5 @@ Made by [Matthieu Napoli](https://github.com/mnapoli), using/inspired by:
 
 * [Redcarpet](https://github.com/vmg/redcarpet)
 * [This gist](https://gist.github.com/1300939) from [ralph](https://gist.github.com/ralph)
+
+Follow the project [on Github](https://github.com/mnapoli/gh-pages-compiler/)

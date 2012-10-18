@@ -11,61 +11,23 @@ First, you need to decide where will *gh-pages-compiler* be hosted:
 
 ## Set up your project
 
-### Home page: README
+Once *gh-pages-compiler* is configured with your project:
 
-There usually is a **README** file in every project.
-If there is none, you should write one at the root of your project repository.
+- **Create a `gh-pages` branch** on your repository (if it doesn't exist)
 
-Here is an example of a README file.
-It has to be formatted using the [Markdown language](http://daringfireball.net/projects/markdown/basics).
+Github will automatically generate a website from the content of this branch.
 
-```markdown
-This is the home page for the **AAA project**.
+- **Write a `README.md`** at the root of your repository, in the master branch
 
-## Features
+Read [why and how](doc/why-readme) if you are lost.
 
-AAA project offers the following features:
+- **Commit**, and check out the Github pages!
 
-* make coffee in 20 seconds
-* print `coffee OK` in the console
-```
+If everything is correctly configured, Github will call *gh-pages-compiler* when you commit.
+*gh-pages-compiler* will then build the website and commit it on the `gh-pages` branch.
 
-Save your file as `README.md` (`.md` is for Markdown).
+Github will then publish the website at something like http://username.github.com/projectname/.
 
-The `README.md` file will be used to generate the **Home page of your website**.
+## More
 
-### Links
-
-Once you have written the home page in the README,
-you can start writing other pages in other `.md` files.
-
-For example, with the following files:
-
-```
-README.md
-doc/getting-started.md
-doc/faq.md
-```
-
-You can can create Markdown links as such:
-
-```
-[Home](index)
-[Getting started guide](doc/getting-started)
-[Frequently asked questions](doc/faq)
-```
-
-However, you will need to set up the [HTML `base` tag](http://www.w3schools.com/tags/tag_base.asp)
-in your template so that links are relative to the root of your website.
-
-```html
-<head>
-
-    <base href="http://username.github.com/yourproject/">
-
-</head>
-```
-
-### Template
-
-This documentation will come soon.
+Go on and [read the documentation](doc/documentation) to use all the features.
