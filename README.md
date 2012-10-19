@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This project is in progress**
+![gh-pages-compiler workflow](workflow.png)
 
 [Github pages](http://pages.github.com/) are good, but what do you do:
 
