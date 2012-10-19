@@ -33,12 +33,13 @@ The only question here is: **where is *gh-pages-compiler* hosted?**
 ## Read more
 
 * [Getting started](doc/getting-started)
+* [Documentation](doc/index)
 
-## Credits
+## Develop
+
+Follow the project [on Github](https://github.com/mnapoli/gh-pages-compiler/)
 
 Made by [Matthieu Napoli](https://github.com/mnapoli), using/inspired by:
 
 * [Redcarpet](https://github.com/vmg/redcarpet)
 * [This gist](https://gist.github.com/1300939) from [ralph](https://gist.github.com/ralph)
-
-Follow the project [on Github](https://github.com/mnapoli/gh-pages-compiler/)

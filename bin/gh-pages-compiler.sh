@@ -43,7 +43,9 @@ find . -name '*.md' | rev | cut -f 2- -d '.' | rev > $BASE_DIR/files.tmp
 cd $BASE_DIR
 
 # Copy resources files of the template
-cp -r $TEMPLATE_DIR/public/* output/
+if [ -d $TEMPLATE_DIR/public ]; then
+	cp -r $TEMPLATE_DIR/public/* output/
+fi
 
 # Compile each file
 while read line

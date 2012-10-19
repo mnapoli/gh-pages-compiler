@@ -30,4 +30,4 @@ Github will then publish the website at something like http://username.github.co
 
 ## More
 
-Go on and [read the documentation](doc/documentation) to use all the features.
+Go on and [read the documentation](doc/index) to use all the features.
