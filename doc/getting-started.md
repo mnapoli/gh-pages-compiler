@@ -21,7 +21,7 @@ Github will automatically generate a website from the content of this branch.
 
 Read [why and how](doc/why-readme) if you are lost.
 
-- **Commit**, and check out the Github pages!
+- **Commit and push**, and go see the Github pages!
 
 If everything is correctly configured, Github will call *gh-pages-compiler* when you commit.
 *gh-pages-compiler* will then build the website and commit it on the `gh-pages` branch.
