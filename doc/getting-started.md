@@ -9,9 +9,13 @@ First, you need to decide where will *gh-pages-compiler* be hosted:
 * you can use a public *gh-pages-compiler* hosting (coming soon)
 * you can install [*gh-pages-compiler* on your own server](doc/install)
 
-## Set up your project
+## Set up the hook
 
-Once *gh-pages-compiler* is configured with your project:
+Now the server is set up, Github will need to call that server every time you commit.
+
+This is very simple, just configure a [post-receive web hook](https://help.github.com/post-receive-hooks/).
+
+## Set up your project
 
 - **Create a `gh-pages` branch** on your repository (if it doesn't exist)
 
