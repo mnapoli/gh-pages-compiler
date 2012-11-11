@@ -18,6 +18,8 @@ Install [Redcarpet](https://github.com/vmg/redcarpet) (Ruby gem):
 $ [sudo] gem install redcarpet
 ```
 
+Install a PHP server (Apache + PHP);
+
 ## Installation
 
 Now to install *gh-pages-compiler*, you can check out the git repository:
@@ -44,3 +46,9 @@ $ bin/gh-pages-compiler.sh https://github.com/mnapoli/gh-pages-compiler.git
 ```
 
 You will need to type your Github username and password when git will try to *push* the modifications.
+
+## Set up the webservice
+
+The `www/` directory needs to be published so the `post-commit-hook.php` is accessible by Github.
+
+Configure Apache so that `www/` is accessible (as a domain, subdomain, subdirectory, ...).
