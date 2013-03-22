@@ -1,6 +1,36 @@
 # Documentation
 
-Have your read the [getting started](doc/getting-started) guide?
+
+## Getting started
+
+- **Create a `gh-pages` branch** on your repository (if it doesn't exist)
+
+You can also use the Github automatic pages generator.
+
+- **Write a `README.md`** at the root of your repository, in the master branch
+
+Read [why and how](doc/why-readme.md) if you are lost.
+
+- **[Install gh-pages-compiler](doc/install.md)**
+
+- **Use gh-pages-compiler**
+
+In gh-pages-compiler directory:
+
+```sh
+$ bin/gh-pages-compiler.sh <repository-url>
+```
+
+Example:
+
+```sh
+$ bin/gh-pages-compiler.sh https://github.com/mnapoli/gh-pages-compiler.git
+```
+
+You will need to type your Github username and password when git will try to *push* the modifications.
+
+Github will then publish the website at something like http://username.github.com/projectname/.
+
 
 ## Links
 
@@ -13,15 +43,19 @@ For example, with the following files:
     doc/getting-started.md
     doc/faq.md
 
-You can can create Markdown links as such and they will work on the website:
+You can can create Markdown links as such and they will work on the website **and on Github**:
 
 ```md
-[Home](index)
-[Getting started guide](doc/getting-started)
-[Frequently asked questions](doc/faq)
+[Home](index.md)
+[Getting started guide](doc/getting-started.md)
+[Frequently asked questions](doc/faq.md)
 ```
 
-You can of course use these urls for your menu too, they are real valid urls (see below for writing a template).
+In your templates however, you need to link without the `.md` extension:
+
+```html
+<a href="doc/getting-started">Getting started guide</a>
+```
 
 However, you will need to set up the [HTML `base` tag](http://www.w3schools.com/tags/tag_base.asp)
 in your template so that links are relative to the root of your website.
@@ -31,6 +65,7 @@ in your template so that links are relative to the root of your website.
     <base href="http://username.github.com/yourproject/">
 </head>
 ```
+
 
 ## Template
 
