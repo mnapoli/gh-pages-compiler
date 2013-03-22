@@ -26,7 +26,7 @@ versionned in your repository with your source, compiled to HTML and published t
 
 * [Documentation](doc/index)
 
-## Develop
+## Contribute
 
 Follow the project [on Github](https://github.com/mnapoli/gh-pages-compiler/)
 
