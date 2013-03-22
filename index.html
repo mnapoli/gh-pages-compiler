@@ -44,34 +44,24 @@
 
 <h2>Introduction</h2>
 
-<p><img src="workflow.png" alt="gh-pages-compiler workflow"></p>
-
 <p><a href="http://pages.github.com/">Github pages</a> are good, but what do you do:</p>
 
 <ul>
 <li>if you want to write your documentation in Markdown and not in HTML?</li>
-<li>if you want to publish your documentation on a website <em>and</em> keep it in the repository?</li>
-<li>if you want the website to be automatically generated and updated at each commit?</li>
+<li>if you want your documentation to be transformed into a website?</li>
+<li>if you want to keep the documentation with your code, versioned in the repository?</li>
 </ul>
 
-<p><em>gh-pages-compiler</em> is here to help you. <strong>Your documentation is written in Markdown, versionned in your repository,
-automatically compiled to HTML and published to <em>Github pages</em>.</strong></p>
+<p><em>gh-pages-compiler</em> is here to help you. <strong>Your documentation is written in Markdown,
+versionned in your repository with your source, compiled to HTML and published to <em>Github pages</em>.</strong></p>
 
 <h2>How does it work</h2>
 
 <ol>
-<li><em>gh-pages-compiler</em> is hooked to your repository to know when you commit</li>
 <li>you write your README and documentation in <code>.md</code> files (Markdown) on your repository</li>
-<li>each time you commit, <em>gh-pages-compiler</em> fetches all <code>.md</code> files and compiles them to HTML</li>
+<li>you generate you website with <em>gh-pages-compiler</em> (turns <code>.md</code> files into HTML files)</li>
 <li>HTML files are committed to the <code>gh-pages</code> branch of your repository, and thus are published as a website by Github</li>
 </ol>
-
-<p>The only question here is: <strong>where is <em>gh-pages-compiler</em> hosted?</strong></p>
-
-<ul>
-<li>you can install <em>gh-pages-compiler</em> on your own server</li>
-<li>a public hosting of <em>gh-pages-compiler</em> may be available in the future</li>
-</ul>
 
 <h2>Features</h2>
 
@@ -83,7 +73,6 @@ automatically compiled to HTML and published to <em>Github pages</em>.</strong><
 <h2>Read more</h2>
 
 <ul>
-<li><a href="doc/getting-started">Getting started</a></li>
 <li><a href="doc/index">Documentation</a></li>
 </ul>
 

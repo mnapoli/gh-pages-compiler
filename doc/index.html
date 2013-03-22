@@ -42,7 +42,38 @@
         <section>
 <h1>Documentation</h1>
 
-<p>Have your read the <a href="doc/getting-started">getting started</a> guide?</p>
+<h2>Getting started</h2>
+
+<ul>
+<li><strong>Create a <code>gh-pages</code> branch</strong> on your repository (if it doesn&#39;t exist)</li>
+</ul>
+
+<p>You can also use the Github automatic pages generator.</p>
+
+<ul>
+<li><strong>Write a <code>README.md</code></strong> at the root of your repository, in the master branch</li>
+</ul>
+
+<p>Read <a href="doc/why-readme.md">why and how</a> if you are lost.</p>
+
+<ul>
+<li><p><strong><a href="doc/install.md">Install gh-pages-compiler</a></strong></p></li>
+<li><p><strong>Use gh-pages-compiler</strong></p></li>
+</ul>
+
+<p>In gh-pages-compiler directory:</p>
+
+<pre><code class="sh">$ bin/gh-pages-compiler.sh &lt;repository-url&gt;
+</code></pre>
+
+<p>Example:</p>
+
+<pre><code class="sh">$ bin/gh-pages-compiler.sh https://github.com/mnapoli/gh-pages-compiler.git
+</code></pre>
+
+<p>You will need to type your Github username and password when git will try to <em>push</em> the modifications.</p>
+
+<p>Github will then publish the website at something like <a href="http://username.github.com/projectname/">http://username.github.com/projectname/</a>.</p>
 
 <h2>Links</h2>
 
@@ -56,14 +87,17 @@ doc/getting-started.md
 doc/faq.md
 </code></pre>
 
-<p>You can can create Markdown links as such and they will work on the website:</p>
+<p>You can can create Markdown links as such and they will work on the website <strong>and on Github</strong>:</p>
 
-<pre><code class="md">[Home](index)
-[Getting started guide](doc/getting-started)
-[Frequently asked questions](doc/faq)
+<pre><code class="md">[Home](index.md)
+[Getting started guide](doc/getting-started.md)
+[Frequently asked questions](doc/faq.md)
 </code></pre>
 
-<p>You can of course use these urls for your menu too, they are real valid urls (see below for writing a template).</p>
+<p>In your templates however, you need to link without the <code>.md</code> extension:</p>
+
+<pre><code class="html">&lt;a href=&quot;doc/getting-started&quot;&gt;Getting started guide&lt;/a&gt;
+</code></pre>
 
 <p>However, you will need to set up the <a href="http://www.w3schools.com/tags/tag_base.asp">HTML <code>base</code> tag</a>
 in your template so that links are relative to the root of your website.</p>
