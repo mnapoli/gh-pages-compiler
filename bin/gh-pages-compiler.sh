@@ -57,8 +57,11 @@ do
     echo ${line}
     mkdir -p $(dirname output/${line})
 	cat ${TEMPLATE_DIR}/template-header.html > ${OUTPUT_FILE}
-	bin/github-flavored-markdown.rb ${SOURCE_FILE} >> ${OUTPUT_FILE}
+
+	# Compiles the markdown (and sed will rename the .md links)
+	bin/github-flavored-markdown.rb ${SOURCE_FILE} | sed 's|<a href="\([^"]*\)\.md"|<a href="\1"|g' >> ${OUTPUT_FILE}
 	cat ${TEMPLATE_DIR}/template-footer.html >> ${OUTPUT_FILE}
+
 done < files.tmp
 
 rm files.tmp

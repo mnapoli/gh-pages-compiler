@@ -9,7 +9,7 @@
 * if you want to keep the documentation with your code, versioned in the repository?
 
 *gh-pages-compiler* is here to help you. **Your documentation is written in Markdown,
-versionned in your repository with your source, compiled to HTML and published to *Github pages*.**
+versioned in your repository with your source, compiled to HTML and published to *Github pages*.**
 
 ## How does it work
 
@@ -24,7 +24,7 @@ versionned in your repository with your source, compiled to HTML and published t
 
 ## Read more
 
-* [Documentation](doc/index)
+* [Documentation](doc/index.md)
 
 ## Contribute
 
