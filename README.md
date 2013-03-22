@@ -24,7 +24,7 @@ versioned in your repository with your source, compiled to HTML and published to
 
 ## Read more
 
-* [Documentation](doc/index.md)
+* [Documentation](doc/)
 
 ## Contribute
 
