@@ -1,0 +1,15 @@
+{
+    "name": "mnapoli/gh-pages-compiler",
+    "description": "Markdown compiler for github pages",
+    "keywords": [ "github", "pages", "gh-pages", "markdown", "website", "compiler" ],
+    "homepage": "http://mnapoli.github.io/gh-pages-compiler/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthieu Napoli"
+        }
+    ],
+    "bin": [
+        "bin/gh-pages-compiler"
+    ]
+}

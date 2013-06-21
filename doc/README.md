@@ -18,13 +18,13 @@ Read [why and how](doc/why-readme.md) if you are lost.
 In gh-pages-compiler directory:
 
 ```sh
-$ bin/gh-pages-compiler.sh <repository-url>
+$ bin/gh-pages-compiler <repository-url>
 ```
 
 Example:
 
 ```sh
-$ bin/gh-pages-compiler.sh https://github.com/mnapoli/gh-pages-compiler.git
+$ bin/gh-pages-compiler https://github.com/mnapoli/gh-pages-compiler.git
 ```
 
 You will need to type your Github username and password when git will try to *push* the modifications.

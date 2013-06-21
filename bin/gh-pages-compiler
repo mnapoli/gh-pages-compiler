@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Usage:
-# gh-pages-compiler.sh <git-repository>
+# gh-pages-compiler <git-repository>
 
 set -e
 set -u
