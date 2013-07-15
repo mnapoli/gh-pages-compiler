@@ -17,7 +17,7 @@ versioned in your repository with your source, compiled to HTML and published to
 2. you generate you website with *gh-pages-compiler*
   - it turns `.md` files into HTML files
   - HTML files are committed to the `gh-pages` branch of your repository, and thus are published as a website by Github
-3. share your URL!
+3. profit!
 
 ## Features
 
