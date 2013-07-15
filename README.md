@@ -14,8 +14,10 @@ versioned in your repository with your source, compiled to HTML and published to
 ## How does it work
 
 1. you write your README and documentation in `.md` files (Markdown) on your repository
-2. you generate you website with *gh-pages-compiler* (turns `.md` files into HTML files)
-4. HTML files are committed to the `gh-pages` branch of your repository, and thus are published as a website by Github
+2. you generate you website with *gh-pages-compiler*
+  - it turns `.md` files into HTML files
+  - HTML files are committed to the `gh-pages` branch of your repository, and thus are published as a website by Github
+3. share your URL!
 
 ## Features
 
