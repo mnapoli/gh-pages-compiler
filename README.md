@@ -4,9 +4,9 @@
 
 [Github pages](http://pages.github.com/) are good, but what do you do:
 
-* if you want to write your documentation in Markdown and not in HTML?
-* if you want your documentation to be transformed into a website?
-* if you want to keep the documentation with your code, versioned in the repository?
+* if you want to write your documentation in **Markdown** and not in HTML?
+* if you want your documentation to be transformed into a **website**?
+* if you want to **keep the documentation with your code**, versioned in the repository?
 
 *gh-pages-compiler* is here to help you. **Your documentation is written in Markdown,
 versioned in your repository with your source, compiled to HTML and published to *Github pages*.**
