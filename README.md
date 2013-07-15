@@ -22,7 +22,10 @@ versioned in your repository with your source, compiled to HTML and published to
 ## Features
 
 * compiles Markdown using the same configuration as Github (to ensure correct results)
-* allows to define a template to design your website as wanted
+* full control over the website layout: you write your own template and menus
+* supports any number of pages, images, links, Javascript (in the template), …
+* hosted by GitHub on "Github pages", you don't have to host your website
+* your README will be your home page, your code repository will always be in sync with your website
 
 ## Read more
 
