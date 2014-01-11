@@ -42,5 +42,5 @@ Created by [Matthieu Napoli](https://github.com/mnapoli), using and inspired by:
 
 ## Examples
 
-* [gh-pages-compiler](http://mnapoli.github.com/gh-pages-compiler/)
-* [PHP-DI](http://mnapoli.github.com/PHP-DI/)
+* [gh-pages-compiler](http://mnapoli.github.io/gh-pages-compiler/)
+* [PHP-DI](http://php-di.org/)
