@@ -1,5 +1,7 @@
 *gh-pages-compiler* generates a website from your markdown documentation.
 
+**This package is not maintained anymore. A more recent and complete version is here: [Couscous](https://github.com/mnapoli/Couscous).**
+
 ## Introduction
 
 [Github pages](http://pages.github.com/) are good, but what do you do:
